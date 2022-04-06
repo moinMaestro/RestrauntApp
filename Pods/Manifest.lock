@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (5.4.0)
+  - GoogleMaps (6.0.1):
+    - GoogleMaps/Maps (= 6.0.1)
+  - GoogleMaps/Base (6.0.1)
+  - GoogleMaps/Maps (6.0.1):
+    - GoogleMaps/Base
+  - GooglePlaces (6.1.1)
+  - ProgressHUD (13.6)
+
+DEPENDENCIES:
+  - Alamofire
+  - GoogleMaps
+  - GooglePlaces (= 6.1.1)
+  - ProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - GoogleMaps
+    - GooglePlaces
+    - ProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
+  GoogleMaps: c213fc2334b7374144cede914da779b99be0ab74
+  GooglePlaces: 9c1f3baa75191b94dfc12b80a801292e03977f73
+  ProgressHUD: 4bdaa0d2ddf676b23324b199f9facffb5c3a1620
+
+PODFILE CHECKSUM: 99fee194a9416c072d60752aedd5b2d58678ae10
+
+COCOAPODS: 1.11.3

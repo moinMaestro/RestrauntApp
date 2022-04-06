@@ -1,0 +1,6 @@
+framework module Pods_RestroAppTests {
+  umbrella header "Pods-RestroAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

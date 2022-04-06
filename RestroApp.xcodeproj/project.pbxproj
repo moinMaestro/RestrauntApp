@@ -1,0 +1,951 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		333C727A27DA8167005A584E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C727927DA8167005A584E /* MapViewController.swift */; };
+		333C727C27DA84BF005A584E /* LocationSearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C727B27DA84BF005A584E /* LocationSearchResultViewController.swift */; };
+		333C727E27DA8E88005A584E /* KMGooglePlacesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C727D27DA8E88005A584E /* KMGooglePlacesManager.swift */; };
+		339B6EAD27D686F0003E8361 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339B6EAC27D686F0003E8361 /* AppDelegate.swift */; };
+		339B6EAF27D686F0003E8361 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339B6EAE27D686F0003E8361 /* SceneDelegate.swift */; };
+		339B6EB427D686F0003E8361 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 339B6EB227D686F0003E8361 /* Main.storyboard */; };
+		339B6EB627D686F3003E8361 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 339B6EB527D686F3003E8361 /* Assets.xcassets */; };
+		339B6EB927D686F3003E8361 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 339B6EB727D686F3003E8361 /* LaunchScreen.storyboard */; };
+		339B6EC427D686F4003E8361 /* RestroAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339B6EC327D686F4003E8361 /* RestroAppTests.swift */; };
+		339B6ECE27D686F4003E8361 /* RestroAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339B6ECD27D686F4003E8361 /* RestroAppUITests.swift */; };
+		339B6ED027D686F4003E8361 /* RestroAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339B6ECF27D686F4003E8361 /* RestroAppUITestsLaunchTests.swift */; };
+		339B6EDD27D68F42003E8361 /* RestrauntListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339B6EDC27D68F42003E8361 /* RestrauntListViewController.swift */; };
+		339B6EDF27D690E9003E8361 /* RestrauntTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339B6EDE27D690E9003E8361 /* RestrauntTableViewCell.swift */; };
+		33DA424727D891210062B5D8 /* RestrauntListModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA424627D891210062B5D8 /* RestrauntListModal.swift */; };
+		33DA426827D8D7A00062B5D8 /* NetworkUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA424A27D8D79F0062B5D8 /* NetworkUrl.swift */; };
+		33DA426927D8D7A00062B5D8 /* KMNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA424B27D8D79F0062B5D8 /* KMNetworkManager.swift */; };
+		33DA426B27D8D7A00062B5D8 /* UILableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA424E27D8D79F0062B5D8 /* UILableExtension.swift */; };
+		33DA426C27D8D7A00062B5D8 /* UIColorExtension 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA424F27D8D79F0062B5D8 /* UIColorExtension 2.swift */; };
+		33DA426D27D8D7A00062B5D8 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA425027D8D79F0062B5D8 /* IntExtension.swift */; };
+		33DA426E27D8D7A00062B5D8 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA425127D8D79F0062B5D8 /* UIViewControllerExtension.swift */; };
+		33DA426F27D8D7A00062B5D8 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA425227D8D79F0062B5D8 /* UIViewExtension.swift */; };
+		33DA427027D8D7A00062B5D8 /* BoolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA425327D8D79F0062B5D8 /* BoolExtension.swift */; };
+		33DA427127D8D7A00062B5D8 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA425427D8D79F0062B5D8 /* StringExtension.swift */; };
+		33DA427227D8D7A00062B5D8 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA425527D8D79F0062B5D8 /* DoubleExtension.swift */; };
+		33DA427327D8D7A00062B5D8 /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA425627D8D79F0062B5D8 /* UserDefaultsExtension.swift */; };
+		33DA427427D8D7A00062B5D8 /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA425727D8D79F0062B5D8 /* AppStrings.swift */; };
+		33DA427527D8D7A00062B5D8 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA425927D8D79F0062B5D8 /* StringConstants.swift */; };
+		33DA427627D8D7A00062B5D8 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA425A27D8D79F0062B5D8 /* AppConstant.swift */; };
+		33DA427727D8D7A00062B5D8 /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA425B27D8D79F0062B5D8 /* CommonUtils.swift */; };
+		33DA427827D8D7A00062B5D8 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33DA425D27D8D79F0062B5D8 /* NotoSans-Regular.ttf */; };
+		33DA427927D8D7A00062B5D8 /* NotoSans-CondensedSemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33DA425E27D8D79F0062B5D8 /* NotoSans-CondensedSemiBold.ttf */; };
+		33DA427A27D8D7A00062B5D8 /* NotoSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33DA425F27D8D79F0062B5D8 /* NotoSans-Medium.ttf */; };
+		33DA427B27D8D7A00062B5D8 /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33DA426027D8D79F0062B5D8 /* NotoSans-Bold.ttf */; };
+		33DA427C27D8D7A00062B5D8 /* NotoSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33DA426127D8D7A00062B5D8 /* NotoSans-SemiBold.ttf */; };
+		33DA427D27D8D7A00062B5D8 /* NotoSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33DA426227D8D7A00062B5D8 /* NotoSans-SemiBoldItalic.ttf */; };
+		33DA428127D8D7A00062B5D8 /* SharedClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA426727D8D7A00062B5D8 /* SharedClass.swift */; };
+		513B665F88699C5A16BE7B0B /* Pods_RestroAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFB9BECC5F4AA256329654E3 /* Pods_RestroAppTests.framework */; };
+		C323091BC79FFCE375207AE8 /* Pods_RestroApp_RestroAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CB87F47D9C2A9C68061DFD /* Pods_RestroApp_RestroAppUITests.framework */; };
+		FB729AC7DBB465A336296335 /* Pods_RestroApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96505C3F09D580E2F73AD8A /* Pods_RestroApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		339B6EC027D686F4003E8361 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 339B6EA127D686EF003E8361 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 339B6EA827D686F0003E8361;
+			remoteInfo = RestroApp;
+		};
+		339B6ECA27D686F4003E8361 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 339B6EA127D686EF003E8361 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 339B6EA827D686F0003E8361;
+			remoteInfo = RestroApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		009F4998E75D3614B18279E4 /* Pods-RestroAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestroAppTests.debug.xcconfig"; path = "Target Support Files/Pods-RestroAppTests/Pods-RestroAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		02CB87F47D9C2A9C68061DFD /* Pods_RestroApp_RestroAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestroApp_RestroAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08B35AC595377DEDE4E6AF42 /* Pods-RestroApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestroApp.debug.xcconfig"; path = "Target Support Files/Pods-RestroApp/Pods-RestroApp.debug.xcconfig"; sourceTree = "<group>"; };
+		2D54D2825CAC45F0B198DCBE /* Pods-RestroApp-RestroAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestroApp-RestroAppUITests.release.xcconfig"; path = "Target Support Files/Pods-RestroApp-RestroAppUITests/Pods-RestroApp-RestroAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		333C727927DA8167005A584E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		333C727B27DA84BF005A584E /* LocationSearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchResultViewController.swift; sourceTree = "<group>"; };
+		333C727D27DA8E88005A584E /* KMGooglePlacesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMGooglePlacesManager.swift; sourceTree = "<group>"; };
+		339B6EA927D686F0003E8361 /* RestroApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestroApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		339B6EAC27D686F0003E8361 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		339B6EAE27D686F0003E8361 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		339B6EB327D686F0003E8361 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		339B6EB527D686F3003E8361 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		339B6EB827D686F3003E8361 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		339B6EBA27D686F3003E8361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		339B6EBF27D686F4003E8361 /* RestroAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestroAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		339B6EC327D686F4003E8361 /* RestroAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestroAppTests.swift; sourceTree = "<group>"; };
+		339B6EC927D686F4003E8361 /* RestroAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestroAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		339B6ECD27D686F4003E8361 /* RestroAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestroAppUITests.swift; sourceTree = "<group>"; };
+		339B6ECF27D686F4003E8361 /* RestroAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestroAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		339B6EDC27D68F42003E8361 /* RestrauntListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrauntListViewController.swift; sourceTree = "<group>"; };
+		339B6EDE27D690E9003E8361 /* RestrauntTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrauntTableViewCell.swift; sourceTree = "<group>"; };
+		33DA424627D891210062B5D8 /* RestrauntListModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrauntListModal.swift; sourceTree = "<group>"; };
+		33DA424A27D8D79F0062B5D8 /* NetworkUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkUrl.swift; sourceTree = "<group>"; };
+		33DA424B27D8D79F0062B5D8 /* KMNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KMNetworkManager.swift; sourceTree = "<group>"; };
+		33DA424E27D8D79F0062B5D8 /* UILableExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILableExtension.swift; sourceTree = "<group>"; };
+		33DA424F27D8D79F0062B5D8 /* UIColorExtension 2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColorExtension 2.swift"; sourceTree = "<group>"; };
+		33DA425027D8D79F0062B5D8 /* IntExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		33DA425127D8D79F0062B5D8 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		33DA425227D8D79F0062B5D8 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		33DA425327D8D79F0062B5D8 /* BoolExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolExtension.swift; sourceTree = "<group>"; };
+		33DA425427D8D79F0062B5D8 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		33DA425527D8D79F0062B5D8 /* DoubleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		33DA425627D8D79F0062B5D8 /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
+		33DA425727D8D79F0062B5D8 /* AppStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
+		33DA425927D8D79F0062B5D8 /* StringConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
+		33DA425A27D8D79F0062B5D8 /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		33DA425B27D8D79F0062B5D8 /* CommonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
+		33DA425D27D8D79F0062B5D8 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		33DA425E27D8D79F0062B5D8 /* NotoSans-CondensedSemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-CondensedSemiBold.ttf"; sourceTree = "<group>"; };
+		33DA425F27D8D79F0062B5D8 /* NotoSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Medium.ttf"; sourceTree = "<group>"; };
+		33DA426027D8D79F0062B5D8 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		33DA426127D8D7A00062B5D8 /* NotoSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		33DA426227D8D7A00062B5D8 /* NotoSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		33DA426727D8D7A00062B5D8 /* SharedClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedClass.swift; sourceTree = "<group>"; };
+		8258609ED7654789A74AE753 /* Pods-RestroApp-RestroAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestroApp-RestroAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-RestroApp-RestroAppUITests/Pods-RestroApp-RestroAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9958B7A645E6D94673AF88CA /* Pods-RestroAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestroAppTests.release.xcconfig"; path = "Target Support Files/Pods-RestroAppTests/Pods-RestroAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		AFB9BECC5F4AA256329654E3 /* Pods_RestroAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestroAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D96505C3F09D580E2F73AD8A /* Pods_RestroApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestroApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF666BD4738DA2431C94F621 /* Pods-RestroApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestroApp.release.xcconfig"; path = "Target Support Files/Pods-RestroApp/Pods-RestroApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		339B6EA627D686F0003E8361 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB729AC7DBB465A336296335 /* Pods_RestroApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		339B6EBC27D686F4003E8361 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				513B665F88699C5A16BE7B0B /* Pods_RestroAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		339B6EC627D686F4003E8361 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C323091BC79FFCE375207AE8 /* Pods_RestroApp_RestroAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		339B6EA027D686EF003E8361 = {
+			isa = PBXGroup;
+			children = (
+				339B6EAB27D686F0003E8361 /* RestroApp */,
+				339B6EC227D686F4003E8361 /* RestroAppTests */,
+				339B6ECC27D686F4003E8361 /* RestroAppUITests */,
+				339B6EAA27D686F0003E8361 /* Products */,
+				9EC89CE98C4ED598028EF024 /* Pods */,
+				EC19221C74AA03477CEEAC35 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		339B6EAA27D686F0003E8361 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				339B6EA927D686F0003E8361 /* RestroApp.app */,
+				339B6EBF27D686F4003E8361 /* RestroAppTests.xctest */,
+				339B6EC927D686F4003E8361 /* RestroAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		339B6EAB27D686F0003E8361 /* RestroApp */ = {
+			isa = PBXGroup;
+			children = (
+				339B6EAC27D686F0003E8361 /* AppDelegate.swift */,
+				339B6EAE27D686F0003E8361 /* SceneDelegate.swift */,
+				339B6EDC27D68F42003E8361 /* RestrauntListViewController.swift */,
+				339B6EDE27D690E9003E8361 /* RestrauntTableViewCell.swift */,
+				33DA424627D891210062B5D8 /* RestrauntListModal.swift */,
+				333C727927DA8167005A584E /* MapViewController.swift */,
+				339B6EB227D686F0003E8361 /* Main.storyboard */,
+				333C727B27DA84BF005A584E /* LocationSearchResultViewController.swift */,
+				333C727D27DA8E88005A584E /* KMGooglePlacesManager.swift */,
+				339B6EB527D686F3003E8361 /* Assets.xcassets */,
+				339B6EB727D686F3003E8361 /* LaunchScreen.storyboard */,
+				339B6EBA27D686F3003E8361 /* Info.plist */,
+				33DA424827D8D79F0062B5D8 /* Utilities */,
+			);
+			path = RestroApp;
+			sourceTree = "<group>";
+		};
+		339B6EC227D686F4003E8361 /* RestroAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				339B6EC327D686F4003E8361 /* RestroAppTests.swift */,
+			);
+			path = RestroAppTests;
+			sourceTree = "<group>";
+		};
+		339B6ECC27D686F4003E8361 /* RestroAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				339B6ECD27D686F4003E8361 /* RestroAppUITests.swift */,
+				339B6ECF27D686F4003E8361 /* RestroAppUITestsLaunchTests.swift */,
+			);
+			path = RestroAppUITests;
+			sourceTree = "<group>";
+		};
+		33DA424827D8D79F0062B5D8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				33DA424927D8D79F0062B5D8 /* NetworkManager */,
+				33DA424C27D8D79F0062B5D8 /* Extension */,
+				33DA425727D8D79F0062B5D8 /* AppStrings.swift */,
+				33DA425827D8D79F0062B5D8 /* Constants */,
+				33DA425B27D8D79F0062B5D8 /* CommonUtils.swift */,
+				33DA425C27D8D79F0062B5D8 /* fonts */,
+				33DA426327D8D7A00062B5D8 /* Helper */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		33DA424927D8D79F0062B5D8 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				33DA424A27D8D79F0062B5D8 /* NetworkUrl.swift */,
+				33DA424B27D8D79F0062B5D8 /* KMNetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		33DA424C27D8D79F0062B5D8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				33DA424E27D8D79F0062B5D8 /* UILableExtension.swift */,
+				33DA424F27D8D79F0062B5D8 /* UIColorExtension 2.swift */,
+				33DA425027D8D79F0062B5D8 /* IntExtension.swift */,
+				33DA425127D8D79F0062B5D8 /* UIViewControllerExtension.swift */,
+				33DA425227D8D79F0062B5D8 /* UIViewExtension.swift */,
+				33DA425327D8D79F0062B5D8 /* BoolExtension.swift */,
+				33DA425427D8D79F0062B5D8 /* StringExtension.swift */,
+				33DA425527D8D79F0062B5D8 /* DoubleExtension.swift */,
+				33DA425627D8D79F0062B5D8 /* UserDefaultsExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		33DA425827D8D79F0062B5D8 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				33DA425927D8D79F0062B5D8 /* StringConstants.swift */,
+				33DA425A27D8D79F0062B5D8 /* AppConstant.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		33DA425C27D8D79F0062B5D8 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				33DA425D27D8D79F0062B5D8 /* NotoSans-Regular.ttf */,
+				33DA425E27D8D79F0062B5D8 /* NotoSans-CondensedSemiBold.ttf */,
+				33DA425F27D8D79F0062B5D8 /* NotoSans-Medium.ttf */,
+				33DA426027D8D79F0062B5D8 /* NotoSans-Bold.ttf */,
+				33DA426127D8D7A00062B5D8 /* NotoSans-SemiBold.ttf */,
+				33DA426227D8D7A00062B5D8 /* NotoSans-SemiBoldItalic.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		33DA426327D8D7A00062B5D8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				33DA426727D8D7A00062B5D8 /* SharedClass.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		9EC89CE98C4ED598028EF024 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08B35AC595377DEDE4E6AF42 /* Pods-RestroApp.debug.xcconfig */,
+				EF666BD4738DA2431C94F621 /* Pods-RestroApp.release.xcconfig */,
+				8258609ED7654789A74AE753 /* Pods-RestroApp-RestroAppUITests.debug.xcconfig */,
+				2D54D2825CAC45F0B198DCBE /* Pods-RestroApp-RestroAppUITests.release.xcconfig */,
+				009F4998E75D3614B18279E4 /* Pods-RestroAppTests.debug.xcconfig */,
+				9958B7A645E6D94673AF88CA /* Pods-RestroAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC19221C74AA03477CEEAC35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D96505C3F09D580E2F73AD8A /* Pods_RestroApp.framework */,
+				02CB87F47D9C2A9C68061DFD /* Pods_RestroApp_RestroAppUITests.framework */,
+				AFB9BECC5F4AA256329654E3 /* Pods_RestroAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		339B6EA827D686F0003E8361 /* RestroApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 339B6ED327D686F4003E8361 /* Build configuration list for PBXNativeTarget "RestroApp" */;
+			buildPhases = (
+				5999D0A167F2404A010322DE /* [CP] Check Pods Manifest.lock */,
+				339B6EA527D686F0003E8361 /* Sources */,
+				339B6EA627D686F0003E8361 /* Frameworks */,
+				339B6EA727D686F0003E8361 /* Resources */,
+				DA9661532FFA8E73ACAE9060 /* [CP] Embed Pods Frameworks */,
+				1ACFCA5B9E99D9C258A84CAF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RestroApp;
+			productName = RestroApp;
+			productReference = 339B6EA927D686F0003E8361 /* RestroApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		339B6EBE27D686F4003E8361 /* RestroAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 339B6ED627D686F4003E8361 /* Build configuration list for PBXNativeTarget "RestroAppTests" */;
+			buildPhases = (
+				E446C64D9E5614D5F711FF4F /* [CP] Check Pods Manifest.lock */,
+				339B6EBB27D686F4003E8361 /* Sources */,
+				339B6EBC27D686F4003E8361 /* Frameworks */,
+				339B6EBD27D686F4003E8361 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				339B6EC127D686F4003E8361 /* PBXTargetDependency */,
+			);
+			name = RestroAppTests;
+			productName = RestroAppTests;
+			productReference = 339B6EBF27D686F4003E8361 /* RestroAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		339B6EC827D686F4003E8361 /* RestroAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 339B6ED927D686F4003E8361 /* Build configuration list for PBXNativeTarget "RestroAppUITests" */;
+			buildPhases = (
+				4367EE2F01036A50AD41A428 /* [CP] Check Pods Manifest.lock */,
+				339B6EC527D686F4003E8361 /* Sources */,
+				339B6EC627D686F4003E8361 /* Frameworks */,
+				339B6EC727D686F4003E8361 /* Resources */,
+				329E9B3702BD0AB31939521E /* [CP] Embed Pods Frameworks */,
+				89EA7A7377A11DDFE72352E8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				339B6ECB27D686F4003E8361 /* PBXTargetDependency */,
+			);
+			name = RestroAppUITests;
+			productName = RestroAppUITests;
+			productReference = 339B6EC927D686F4003E8361 /* RestroAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		339B6EA127D686EF003E8361 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					339B6EA827D686F0003E8361 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					339B6EBE27D686F4003E8361 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 339B6EA827D686F0003E8361;
+					};
+					339B6EC827D686F4003E8361 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 339B6EA827D686F0003E8361;
+					};
+				};
+			};
+			buildConfigurationList = 339B6EA427D686EF003E8361 /* Build configuration list for PBXProject "RestroApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 339B6EA027D686EF003E8361;
+			productRefGroup = 339B6EAA27D686F0003E8361 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				339B6EA827D686F0003E8361 /* RestroApp */,
+				339B6EBE27D686F4003E8361 /* RestroAppTests */,
+				339B6EC827D686F4003E8361 /* RestroAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		339B6EA727D686F0003E8361 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33DA427827D8D7A00062B5D8 /* NotoSans-Regular.ttf in Resources */,
+				339B6EB927D686F3003E8361 /* LaunchScreen.storyboard in Resources */,
+				33DA427D27D8D7A00062B5D8 /* NotoSans-SemiBoldItalic.ttf in Resources */,
+				33DA427C27D8D7A00062B5D8 /* NotoSans-SemiBold.ttf in Resources */,
+				33DA427A27D8D7A00062B5D8 /* NotoSans-Medium.ttf in Resources */,
+				33DA427B27D8D7A00062B5D8 /* NotoSans-Bold.ttf in Resources */,
+				33DA427927D8D7A00062B5D8 /* NotoSans-CondensedSemiBold.ttf in Resources */,
+				339B6EB627D686F3003E8361 /* Assets.xcassets in Resources */,
+				339B6EB427D686F0003E8361 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		339B6EBD27D686F4003E8361 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		339B6EC727D686F4003E8361 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1ACFCA5B9E99D9C258A84CAF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RestroApp/Pods-RestroApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RestroApp/Pods-RestroApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RestroApp/Pods-RestroApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		329E9B3702BD0AB31939521E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RestroApp-RestroAppUITests/Pods-RestroApp-RestroAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RestroApp-RestroAppUITests/Pods-RestroApp-RestroAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RestroApp-RestroAppUITests/Pods-RestroApp-RestroAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4367EE2F01036A50AD41A428 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RestroApp-RestroAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5999D0A167F2404A010322DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RestroApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89EA7A7377A11DDFE72352E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RestroApp-RestroAppUITests/Pods-RestroApp-RestroAppUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RestroApp-RestroAppUITests/Pods-RestroApp-RestroAppUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RestroApp-RestroAppUITests/Pods-RestroApp-RestroAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA9661532FFA8E73ACAE9060 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RestroApp/Pods-RestroApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RestroApp/Pods-RestroApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RestroApp/Pods-RestroApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E446C64D9E5614D5F711FF4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RestroAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		339B6EA527D686F0003E8361 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33DA426927D8D7A00062B5D8 /* KMNetworkManager.swift in Sources */,
+				33DA427227D8D7A00062B5D8 /* DoubleExtension.swift in Sources */,
+				339B6EDD27D68F42003E8361 /* RestrauntListViewController.swift in Sources */,
+				33DA428127D8D7A00062B5D8 /* SharedClass.swift in Sources */,
+				33DA424727D891210062B5D8 /* RestrauntListModal.swift in Sources */,
+				33DA427127D8D7A00062B5D8 /* StringExtension.swift in Sources */,
+				333C727E27DA8E88005A584E /* KMGooglePlacesManager.swift in Sources */,
+				33DA426F27D8D7A00062B5D8 /* UIViewExtension.swift in Sources */,
+				339B6EAD27D686F0003E8361 /* AppDelegate.swift in Sources */,
+				33DA427527D8D7A00062B5D8 /* StringConstants.swift in Sources */,
+				33DA427627D8D7A00062B5D8 /* AppConstant.swift in Sources */,
+				33DA427027D8D7A00062B5D8 /* BoolExtension.swift in Sources */,
+				333C727A27DA8167005A584E /* MapViewController.swift in Sources */,
+				33DA426D27D8D7A00062B5D8 /* IntExtension.swift in Sources */,
+				33DA427427D8D7A00062B5D8 /* AppStrings.swift in Sources */,
+				33DA427727D8D7A00062B5D8 /* CommonUtils.swift in Sources */,
+				33DA426C27D8D7A00062B5D8 /* UIColorExtension 2.swift in Sources */,
+				33DA426827D8D7A00062B5D8 /* NetworkUrl.swift in Sources */,
+				333C727C27DA84BF005A584E /* LocationSearchResultViewController.swift in Sources */,
+				33DA426E27D8D7A00062B5D8 /* UIViewControllerExtension.swift in Sources */,
+				339B6EDF27D690E9003E8361 /* RestrauntTableViewCell.swift in Sources */,
+				33DA426B27D8D7A00062B5D8 /* UILableExtension.swift in Sources */,
+				33DA427327D8D7A00062B5D8 /* UserDefaultsExtension.swift in Sources */,
+				339B6EAF27D686F0003E8361 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		339B6EBB27D686F4003E8361 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				339B6EC427D686F4003E8361 /* RestroAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		339B6EC527D686F4003E8361 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				339B6ECE27D686F4003E8361 /* RestroAppUITests.swift in Sources */,
+				339B6ED027D686F4003E8361 /* RestroAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		339B6EC127D686F4003E8361 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 339B6EA827D686F0003E8361 /* RestroApp */;
+			targetProxy = 339B6EC027D686F4003E8361 /* PBXContainerItemProxy */;
+		};
+		339B6ECB27D686F4003E8361 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 339B6EA827D686F0003E8361 /* RestroApp */;
+			targetProxy = 339B6ECA27D686F4003E8361 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		339B6EB227D686F0003E8361 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				339B6EB327D686F0003E8361 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		339B6EB727D686F3003E8361 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				339B6EB827D686F3003E8361 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		339B6ED127D686F4003E8361 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		339B6ED227D686F4003E8361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		339B6ED427D686F4003E8361 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08B35AC595377DEDE4E6AF42 /* Pods-RestroApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J98AT78UAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RestroApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.RestroApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		339B6ED527D686F4003E8361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF666BD4738DA2431C94F621 /* Pods-RestroApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J98AT78UAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RestroApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.RestroApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		339B6ED727D686F4003E8361 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 009F4998E75D3614B18279E4 /* Pods-RestroAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.RestroAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RestroApp.app/RestroApp";
+			};
+			name = Debug;
+		};
+		339B6ED827D686F4003E8361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9958B7A645E6D94673AF88CA /* Pods-RestroAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.RestroAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RestroApp.app/RestroApp";
+			};
+			name = Release;
+		};
+		339B6EDA27D686F4003E8361 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8258609ED7654789A74AE753 /* Pods-RestroApp-RestroAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.RestroAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RestroApp;
+			};
+			name = Debug;
+		};
+		339B6EDB27D686F4003E8361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D54D2825CAC45F0B198DCBE /* Pods-RestroApp-RestroAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.RestroAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RestroApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		339B6EA427D686EF003E8361 /* Build configuration list for PBXProject "RestroApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				339B6ED127D686F4003E8361 /* Debug */,
+				339B6ED227D686F4003E8361 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		339B6ED327D686F4003E8361 /* Build configuration list for PBXNativeTarget "RestroApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				339B6ED427D686F4003E8361 /* Debug */,
+				339B6ED527D686F4003E8361 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		339B6ED627D686F4003E8361 /* Build configuration list for PBXNativeTarget "RestroAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				339B6ED727D686F4003E8361 /* Debug */,
+				339B6ED827D686F4003E8361 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		339B6ED927D686F4003E8361 /* Build configuration list for PBXNativeTarget "RestroAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				339B6EDA27D686F4003E8361 /* Debug */,
+				339B6EDB27D686F4003E8361 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 339B6EA127D686EF003E8361 /* Project object */;
+}
